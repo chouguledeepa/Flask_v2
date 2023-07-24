@@ -1,4 +1,4 @@
-from flask import Flask, render_template,abort
+from flask import Flask, render_template,abort,jsonify
 from modals.dal import db
 
 app = Flask(__name__)
@@ -16,6 +16,11 @@ def card_view(index):
         return render_template("card.html", card=card, index=index)
     except IndexError:
         abort(404)
+
+@app.route("/api/cards")
+def cards_list():
+    #return jsonify(db)
+    return db
 
 
 if __name__ == '__main__':  # ,
