@@ -9,12 +9,17 @@
 <h>Falsh card </h>
 <p>
     <br>
-index :: {{ index }}
-    <br>
+Index :: {{ index }}
+    <br><br>
 Question :: {{ card.Question }}
     <br>
     <br>
 Answer ::  {{card.Answers}}
+    <br><br><br>
+    <button>
+        <a href="{{ url_for ("card_view",index=index+1) }}">
+        Next Card </a>
+    </button>
 
 </p>
 </body>

@@ -7,10 +7,14 @@
 <body>
     <h1>This is our welcome Page</h1>
     <p>   It is only for Demonstrate purpose only </p>
-
-
-
-
+    {% for card in cards %}
+    <br>
+            <a href="{{ url_for ("card_view",index=loop.index0) }}">
+                    <br>
+        Question :: {{ card.Question }}
+            </a>
+    {% endfor %}
+    <br><br>
     <img src="static/flask.png">
 </body>
 </html>
