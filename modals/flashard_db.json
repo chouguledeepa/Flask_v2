@@ -1,0 +1,27 @@
+[
+  {
+    "Question":"why do we use flask?",
+    "Answers":"flask is a light wait library"
+
+  },
+    {
+    "Question":"what is pydantic used for?",
+    "Answers":"pydantic is a library used for data validation"
+  },
+    {
+    "Question":"what id() function generate?",
+    "Answers":"id() function generate identification"
+
+  },
+    {
+    "Question":"what are http methods?",
+    "Answers":"GET POST PUT DELETE PATH"
+
+  },
+    {
+    "Question":"wHAT ARE HTTP STATUS ODE?",
+    "Answers":"200 success 404 not found 500 internal server 400 forbidden error"
+
+  }
+]
+
